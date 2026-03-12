@@ -1,0 +1,18 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/AMD_Vivado/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot core_sim_behav xil_defaultlib.core_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 5 for port 'rs2Addr_out' [C:/Users/99269/Desktop/ai_exp_teach_exp1/code/core/EXE_stage.v:88]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'EN' [C:/Users/99269/Desktop/ai_exp_teach_exp1/code/core/EXE_stage.v:126]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'C' [C:/Users/99269/Desktop/ai_exp_teach_exp1/code/core/SAMV.v:77]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'C' [C:/Users/99269/Desktop/ai_exp_teach_exp1/code/core/SAMV.v:79]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ena' [C:/Users/99269/Desktop/ai_exp_teach_exp1/code/core/RAM_B.v:32]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'rsta' [C:/Users/99269/Desktop/ai_exp_teach_exp1/code/core/RAM_B.v:33]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'regcea' [C:/Users/99269/Desktop/ai_exp_teach_exp1/code/core/RAM_B.v:34]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'sleep' [C:/Users/99269/Desktop/ai_exp_teach_exp1/code/core/RAM_B.v:35]
+WARNING: [VRFC 10-5021] port 'injectsbiterra' is not connected on this instance [C:/Users/99269/Desktop/ai_exp_teach_exp1/code/core/RAM_B.v:16]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
