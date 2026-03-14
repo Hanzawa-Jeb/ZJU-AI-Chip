@@ -146,9 +146,9 @@ module   EXE_stage( input clk,
 
     // You may add some code here...
     
-    assign ALUOut_EXE = //Complete the signal here.
-    assign MemDataOut_EXE = //Complete the signal here.
-    assign SAMVOut_EXE = //Complete the signal here.
+    assign ALUOut_EXE = ALUOut;//Complete the signal here.
+    assign MemDataOut_EXE = MemDataOut;//Complete the signal here.
+    assign SAMVOut_EXE = SAMVOut;//Complete the signal here.
     assign dataToReg_bubble = //Complete the signal here.
 
     // Below logics are for hazard dection, do not change them.

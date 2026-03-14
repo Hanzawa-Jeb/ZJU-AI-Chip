@@ -29,8 +29,25 @@ module Mac(
     output[8:0] res
     );
     wire [7:0] mult;
-    Mult4 // Please finish the instance here.
-    assign res = // You can design MAC based on your need.
+    wire [31:0] add_32_res;
+    Mult4 mult4(
+        .clk(clk),
+        .rst(rst),
+        .EN(EN),
+        .A(A),
+        .B(B),
+        .res(mult)
+    );
+
+    add_32 add_32(
+        .a({24'b0, mult}),
+        .b({24'b0, C}),
+        .c(add_32_res)
+    );
+    // Make sure the bitwidth is enough for 9-bit
+
+    // Please finish the instance here.
+    assign res = add_32_res[8:0];// You can design MAC based on your need.
     // Pure combinational Logic, no sequential needed
     
 endmodule

@@ -91,6 +91,7 @@ module CtrlUnit(
     wire B_valid = BEQ | BNE | BLT | BGE | BLTU | BGEU;
     wire L_valid = LW | LH | LB | LHU | LBU;
     wire S_valid = SW | SH | SB ;
+    wire SAMV_valid = SAMV_op & (funct3_0);
 
     // Please refer to ID_stage.v for the meaning of ports
 
@@ -152,9 +153,14 @@ module CtrlUnit(
 
     assign memAccType = funct3;
 
-    assign dataToReg = // Complete the signal here.
+    assign dataToReg = ({2{L_valid}} & 2'b00) |
+                       ({2{SAMV_valid}} & 2'b01) |
+                       ({2{R_valid | I_valid | JAL | JALR | LUI | AUIPC}} & 2'b10) |
+                       ({2{!(SAMV_valid | R_valid | I_valid | JAL | JALR | L_valid | LUI | AUIPC)}} & 2'b11);
+    
+    // Complete the signal here.
 
-    assign regWrite = // Complete the signal here.
+    assign regWrite = SAMV_valid | R_valid | I_valid | JAL | JALR | L_valid | LUI | AUIPC;// Complete the signal here.
 
     assign memWrite = S_valid;
 
