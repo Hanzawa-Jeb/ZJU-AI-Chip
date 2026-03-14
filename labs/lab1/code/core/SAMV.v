@@ -105,7 +105,7 @@ Mac mac4(
     .A(REG2_b),
     .B(REG2_s),
     .C(REG2_res_2[7:0]),
-    .res(REG2_res_2)
+    .res(mac4_res)
 );
 
 always @(posedge clk) begin
@@ -126,7 +126,7 @@ always @(posedge clk) begin
     REG2_p <= REG1_p;
     REG2_r <= REG1_r;
     REG2_q <= REG1_q;
-    REG2_s <= REG1_S;
+    REG2_s <= REG1_s;
 end
 
 assign higher_res = {7'b0, REG2_res_1};

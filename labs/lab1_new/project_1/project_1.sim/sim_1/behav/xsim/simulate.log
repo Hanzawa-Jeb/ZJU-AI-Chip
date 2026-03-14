@@ -63,4 +63,4 @@ Time: 121ns, pass.
 Time: 123ns, pass.
 Time: 125ns, pass.
 All samples passed! Congrats!
-$stop called at time : 127 ns : File "C:/Users/99269/Desktop/ai_exp_teach_exp1/code/sim/core_sim.v" Line 2711
+$stop called at time : 127 ns : File "C:/Users/David_Y9000P/Desktop/CSCourses/AI-Chip/labs/lab1/code/sim/core_sim.v" Line 2711

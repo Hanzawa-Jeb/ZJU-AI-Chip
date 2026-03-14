@@ -91,7 +91,7 @@ module CtrlUnit(
     wire B_valid = BEQ | BNE | BLT | BGE | BLTU | BGEU;
     wire L_valid = LW | LH | LB | LHU | LBU;
     wire S_valid = SW | SH | SB ;
-    wire SAMV_valid = SAMV_op & (funct3_0);
+    wire SAMV_valid = SAMVop & (funct3_0);
 
     // Please refer to ID_stage.v for the meaning of ports
 

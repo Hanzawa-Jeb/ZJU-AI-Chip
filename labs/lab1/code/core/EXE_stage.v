@@ -20,8 +20,8 @@ module   EXE_stage( input clk,
                     input MIO_ID,
 
                     output [31:0] PC_EXE_Hazard,                      
-                    output [31:0] inst_EXE_Hazard,                    
                     output [31:0] ALUOut_EXE_Hazard,                      
+                    output [31:0] inst_EXE_Hazard,                    
                     output [31:0] MemDataOut_EXE_Hazard,                      
                     output [31:0] SAMVOut_EXE_Hazard,                      
                     output [4:0]  rdAddr_EXE_Hazard,                   
@@ -145,11 +145,27 @@ module   EXE_stage( input clk,
     // Please add bubbles to make sure that the final ALUOut_EXE, MemDataOut_EXE and SAMVOut_EXE are ready after 3 cycles.
 
     // You may add some code here...
+
+    reg[31:0] alu_out_delay_1;
+    reg[31:0] alu_out_delay_2;
+    reg[31:0] mem_out_delay_1;
+    reg[1:0] dataToReg_delay_1;
+    reg[1:0] dataToReg_delay_2;
     
-    assign ALUOut_EXE = ALUOut;//Complete the signal here.
-    assign MemDataOut_EXE = MemDataOut;//Complete the signal here.
+    always @(posedge clk) begin
+        alu_out_delay_1 <= ALUOut;
+        alu_out_delay_2 <= alu_out_delay_1;
+        //ALU delay op
+        mem_out_delay_1 <= MemDataOut;
+        //Memory delay op
+        dataToReg_delay_1 <= dataToReg_tmp;
+        dataToReg_delay_2 <= dataToReg_delay_1;
+    end
+    
+    assign ALUOut_EXE = alu_out_delay_2;//Complete the signal here.
+    assign MemDataOut_EXE = mem_out_delay_1;//Complete the signal here.
     assign SAMVOut_EXE = SAMVOut;//Complete the signal here.
-    assign dataToReg_bubble = //Complete the signal here.
+    assign dataToReg_EXE = dataToReg_delay_2;//Complete the signal here.
 
     // Below logics are for hazard dection, do not change them.
 

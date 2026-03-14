@@ -1,18 +1,50 @@
-Vivado Simulator v2025.2
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: D:/AMD_Vivado/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot core_sim_behav xil_defaultlib.core_sim xil_defaultlib.glbl -log elaborate.log 
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot core_sim_behav xil_defaultlib.core_sim xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 5 for port 'rs2Addr_out' [C:/Users/99269/Desktop/ai_exp_teach_exp1/code/core/EXE_stage.v:88]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'EN' [C:/Users/99269/Desktop/ai_exp_teach_exp1/code/core/EXE_stage.v:126]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'C' [C:/Users/99269/Desktop/ai_exp_teach_exp1/code/core/SAMV.v:77]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'C' [C:/Users/99269/Desktop/ai_exp_teach_exp1/code/core/SAMV.v:79]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ena' [C:/Users/99269/Desktop/ai_exp_teach_exp1/code/core/RAM_B.v:32]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'rsta' [C:/Users/99269/Desktop/ai_exp_teach_exp1/code/core/RAM_B.v:33]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'regcea' [C:/Users/99269/Desktop/ai_exp_teach_exp1/code/core/RAM_B.v:34]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'sleep' [C:/Users/99269/Desktop/ai_exp_teach_exp1/code/core/RAM_B.v:35]
-WARNING: [VRFC 10-5021] port 'injectsbiterra' is not connected on this instance [C:/Users/99269/Desktop/ai_exp_teach_exp1/code/core/RAM_B.v:16]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 5 for port 'rs2Addr_out' [C:/Users/David_Y9000P/Desktop/CSCourses/AI-Chip/labs/lab1/code/core/EXE_stage.v:88]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'EN' [C:/Users/David_Y9000P/Desktop/CSCourses/AI-Chip/labs/lab1/code/core/EXE_stage.v:126]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'EN' [C:/Users/David_Y9000P/Desktop/CSCourses/AI-Chip/labs/lab1/code/core/SAMV.v:74]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'EN' [C:/Users/David_Y9000P/Desktop/CSCourses/AI-Chip/labs/lab1/code/core/SAMV.v:84]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'EN' [C:/Users/David_Y9000P/Desktop/CSCourses/AI-Chip/labs/lab1/code/core/SAMV.v:94]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'EN' [C:/Users/David_Y9000P/Desktop/CSCourses/AI-Chip/labs/lab1/code/core/SAMV.v:104]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ena' [C:/Users/David_Y9000P/Desktop/CSCourses/AI-Chip/labs/lab1/code/core/RAM_B.v:32]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'rsta' [C:/Users/David_Y9000P/Desktop/CSCourses/AI-Chip/labs/lab1/code/core/RAM_B.v:33]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'regcea' [C:/Users/David_Y9000P/Desktop/CSCourses/AI-Chip/labs/lab1/code/core/RAM_B.v:34]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'sleep' [C:/Users/David_Y9000P/Desktop/CSCourses/AI-Chip/labs/lab1/code/core/RAM_B.v:35]
+WARNING: [VRFC 10-5021] port 'injectsbiterra' is not connected on this instance [C:/Users/David_Y9000P/Desktop/CSCourses/AI-Chip/labs/lab1/code/core/RAM_B.v:16]
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.REG32
+Compiling module xil_defaultlib.add_32
+Compiling module xil_defaultlib.MUX2T1_32
+Compiling module xil_defaultlib.ROM_D
+Compiling module xil_defaultlib.IF_stage
+Compiling module xil_defaultlib.REG_IF_ID
+Compiling module xil_defaultlib.CtrlUnit
+Compiling module xil_defaultlib.Regs
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.MUX4T1_32
+Compiling module xil_defaultlib.cmp_32
+Compiling module xil_defaultlib.HazardDetectionUnit
+Compiling module xil_defaultlib.ID_stage
+Compiling module xil_defaultlib.REG_ID_EX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Mult4
+Compiling module xil_defaultlib.Mac
+Compiling module xil_defaultlib.SAMV
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=0,ME...
+Compiling module xpm.xpm_memory_spram(MEMORY_SIZE=819...
+Compiling module xil_defaultlib.RAM_B
+Compiling module xil_defaultlib.EXE_stage
+Compiling module xil_defaultlib.EXE_Hazard
+Compiling module xil_defaultlib.REG_EX_WB
+Compiling module xil_defaultlib.WB_stage
+Compiling module xil_defaultlib.RV32core
+Compiling module xil_defaultlib.core_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot core_sim_behav
